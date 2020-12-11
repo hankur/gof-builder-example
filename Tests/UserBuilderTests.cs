@@ -15,11 +15,11 @@ namespace Tests
         }
 
         [Test]
-        public void Create()
+        public void CreateAndGetUser()
         {
             _builder.Create();
             
-            Assert.AreEqual(new User(), _builder.GetUser());
+            Assert.NotNull(_builder.GetUser());
         }
 
         [Test]

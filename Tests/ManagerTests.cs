@@ -58,7 +58,7 @@ namespace Tests
         {
             var groupBuilder = new GroupBuilder();
             
-            _manager.CreateDefault(groupBuilder);
+            _manager.CreateAdmin(groupBuilder);
 
             var group = groupBuilder.GetGroup();
             

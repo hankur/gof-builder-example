@@ -8,20 +8,6 @@ namespace Builder
     {
         static void Main(string[] args)
         {
-            // Old way
-            var oldDefaultUser = new User
-            {
-                Name = "Jaanus",
-                Roles = new List<string>{"Default"},
-                Permissions = new List<string>{"UserView"}
-            };
-            var oldAdminUser = new User
-            {
-                Name = "Peetrus",
-                Roles = new List<string>{"Admin"},
-                Permissions = new List<string>{"UserView", "AdminView"}
-            };
-            
             // Manager and Builders
             var manager = new Manager();
             var userBuilder = new UserBuilder();
@@ -47,7 +33,7 @@ namespace Builder
             var adminGroup = groupBuilder.GetGroup();
             adminGroup.Name = "Admin kasutajad";
             
-            // Print result
+            // Demonstrate result
             Console.WriteLine($"Default user: {defaultUser.ToString()}");
             Console.WriteLine($"Admin user: {adminUser.ToString()}");
             Console.WriteLine($"Default group: {defaultGroup.ToString()}");

@@ -15,11 +15,11 @@ namespace Tests
         }
 
         [Test]
-        public void Create()
+        public void CreateAndGetGroup()
         {
             _builder.Create();
-            
-            Assert.AreEqual(new Group(), _builder.GetGroup());
+
+            Assert.NotNull(_builder.GetGroup());
         }
 
         [Test]
