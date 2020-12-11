@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using Builder.Contract;
 
-namespace SqlBuilder.Domain
+namespace Builder.Domain
 {
     public class Manager
     {

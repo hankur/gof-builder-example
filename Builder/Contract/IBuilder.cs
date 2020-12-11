@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace SqlBuilder
+namespace Builder.Contract
 {
     public interface IBuilder
     {

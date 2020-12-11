@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using SqlBuilder.Domain;
+using Builder.Domain;
 
-namespace SqlBuilder
+namespace Builder
 {
     class Program
     {
